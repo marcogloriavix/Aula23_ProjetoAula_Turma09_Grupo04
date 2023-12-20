@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog de animes</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <script src="./js/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="introducao">
+            <h1>Bem vindo ao blog de animes</h1>
+            <p>
+                Explore o fascinante mundo dos animes, descubra informações
+                sobre seus animes favoritos e compartilhe suas experiências com
+                outros entusiastas.
+            </p>
+        </section>
+        <h2>Nossas postagens de animes</h2>
+
+        <section id="blog-container">
+            <div class="anime-container">
+                <img src="./assets/bleach.jpeg" alt="imagem do anime bleach" />
+                <h3>Bleach</h3>
+                <p>
+                    Bleach é uma série de anime e mangá criada por Tite Kubo. A
+                    história segue Ichigo Kurosaki, um adolescente com
+                    habilidades especiais que se torna um Ceifeiro de Almas para
+                    proteger os vivos dos espíritos malignos.
+                </p>
+            </div>
+            <div class="anime-container">
+                <img src="./assets/naruto.jpeg" alt="imagem do anime naruto" />
+                <h3>Naruto</h3>
+                <p>
+                    Naruto é uma série de anime e mangá criada por Masashi
+                    Kishimoto. A trama gira em torno de Naruto Uzumaki, um jovem
+                    ninja que busca reconhecimento de seus pares e sonha em se
+                    tornar o Hokage, o líder de sua vila.
+                </p>
+            </div>
+            <div class="anime-container">
+                <img
+                    src="./assets/fullmetal-alchemist.jpeg"
+                    alt="imagem do anime fullmetal-alchemist"
+                />
+                <h3>Full metal Alchemist</h3>
+                <p>
+                    Fullmetal Alchemist é uma obra de Hiromu Arakawa. A história
+                    segue os irmãos Edward e Alphonse Elric, que usam a alquimia
+                    em sua busca para recuperar seus corpos após um experimento
+                    malsucedido.
+                </p>
+            </div>
+            <div class="anime-container">
+                <img
+                    src="./assets/one-piece.jpg"
+                    alt="imagem do anime one-piece"
+                />
+                <h3>One piece</h3>
+                <p>
+                    One Piece, criado por Eiichiro Oda, é uma série de aventura
+                    que segue Monkey D. Luffy e sua tripulação de piratas
+                    enquanto exploram o mundo em busca do tesouro conhecido como
+                    One Piece.
+                </p>
+            </div>
+        </section>
+        <section id="form-anime">
+            <h2>Adicione sua postagem de anime</h2>
+            <form id="anime-form">
+                <label for="anime-name">Nome do anime</label>
+                <input type="text" id="anime-name" required />
+
+                <label for="descricao-anime">Descrição anime</label>
+                <input type="text" id="descricao-anime" required />
+
+                <label for="anime-image">URL do anime</label>
+                <input type="url" id="anime-image" required />
+
+                <button type="submit" onclick="adicionarAnime()">Adicionar anime</button>
+            </form>
+        </section>
+    </body>
+</html>
